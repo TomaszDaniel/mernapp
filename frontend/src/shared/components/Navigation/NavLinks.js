@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom'
-import { Redirect } from 'react-router-dom'
 
 import './NavLinks.css'
 import { AuthContext } from '../../context/auth-context'
