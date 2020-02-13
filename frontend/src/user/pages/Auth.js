@@ -50,7 +50,7 @@ const Auth = props => {
                         'Content-Type': 'application/json'
                     },
                 )
-                auth.login(responseData.user.id)
+                auth.login(responseData.userId, responseData.token)
             } catch (err) {
 
             }
@@ -64,7 +64,7 @@ const Auth = props => {
                 const responseData = await sendRequest('http://localhost:5000/api/users/signup',
                     'POST', formData
                 )
-                auth.login(responseData.user.id)
+                auth.login(responseData.userId, responseData.token)
             } catch (err) { }
         }
 

@@ -35,7 +35,6 @@ app.use((error, req, res, next) => {
     if (req.file) {
         fs.unlink(req.file.path, err => {
             console.log(err)
-
         })
     }
     if (res.headerSent) {
@@ -46,7 +45,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-    .connect('mongodb+srv://tomasz:S4j3F7jOUt6vjdph@mern-vaxmd.mongodb.net/mern?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+    .connect('mongodb+srv://tomasz:S4j3F7jOUt6vjdph@mern-vaxmd.mongodb.net/mern?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, })
     .then(() => {
         app.listen(5000);
     })
