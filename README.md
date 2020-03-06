@@ -2,6 +2,9 @@
 
 See [DEMO](https://mymernapp.firebaseapp.com/)
 
+login: test@test.com
+password: test123
+
 #### Note 
 
 I use herok to host my backend and that's why the pictures are only available for 30 minutes.
