@@ -2,7 +2,7 @@
 
 See [DEMO](https://mymernapp.firebaseapp.com/)
 
-login: test@test.com
+login: test@test.com  
 password: test123
 
 #### Note 
